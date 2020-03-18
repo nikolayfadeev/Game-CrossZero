@@ -1,0 +1,38 @@
+
+.CrossZero {
+    width: 350px;
+
+    margin: 0 auto;
+    background-color: #3c5868;
+
+    border: 1px solid #283234;
+}
+
+
+
+    .CrossZero ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 5px;
+    }
+
+    .CrossZero ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        list-style: none;
+        width: 111px;
+        height: 111px;
+        /*background-color: #6b57ff;*/
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+        .CrossZero ul li:hover {
+            background-color: rgba(255,255,255, 0.5);
+        }
