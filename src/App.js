@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CrossZero from "./components/Cross-zero/CrossZero";
+import IziWinn from "./components/Cross-zero/IziWinn";
 
 class App extends React.Component {
 
@@ -14,6 +15,9 @@ class App extends React.Component {
     onClearBoard = () => {
         this.setState({
             cell: Array(9).fill(null)
+        })
+        this.setState({
+            win: false
         })
     }
 
@@ -36,10 +40,11 @@ class App extends React.Component {
             && this.state.cell[onCombo[1]] === symbl
             && this.state.cell[onCombo[2]] === symbl
             ) {
-                alert(`${symbl} win`)
                 this.setState({
                     win: true
                 })
+                alert(`${symbl} - Вы выиграли`)
+
                 this.onClearBoard()
             }
         }
@@ -58,14 +63,6 @@ class App extends React.Component {
         this.isWinner()
     }
 
-    iziWinn = () => {
-        if(this.state.win) {
-            return <p>Изи победа</p>
-        }else {
-            return null
-        }
-    }
-
 
 
     render() {
@@ -82,7 +79,7 @@ class App extends React.Component {
 
 
                 <p>Ход игрока: {(this.state.count % 2 === 0) ? "x" : 0}</p>
-                {this.iziWinn}
+                <IziWinn win={this.state.win} />
 
             </div>
         );
