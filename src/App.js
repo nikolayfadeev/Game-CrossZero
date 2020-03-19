@@ -60,7 +60,7 @@ class App extends React.Component {
         if (cell[index] === null) {
             cell[index] = (this.state.count % 2 === 0) ? "x" : 0
             this.setState({
-                coutn: this.state.count++,
+                count: this.state.count+1,
                 cell: cell
             })
         }
