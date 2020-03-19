@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d14a7a7-bfd6-41b6-a653-c47dbeded646" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Admin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cross-zero/CrossZero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cross-zero/CrossZero.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cross-zero/ItemGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
@@ -75,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584544273148</updated>
       <workItem from="1584544277257" duration="8197000" />
-      <workItem from="1584563346413" duration="7561000" />
+      <workItem from="1584563346413" duration="10275000" />
     </task>
     <servers />
   </component>
@@ -87,10 +81,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="717" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584547724858" />
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584563346366">
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584580815729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584563346366" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584580815729" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1584565089826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

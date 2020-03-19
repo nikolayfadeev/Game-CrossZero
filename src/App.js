@@ -7,7 +7,8 @@ class App extends React.Component {
 
     state = {
         cell: Array(9).fill(null),
-        count: 0
+        count: 0,
+        win: false
     }
 
     isWinner = () => {
@@ -31,6 +32,9 @@ class App extends React.Component {
             ) {
                 alert(`${symbl} win`)
                 this.setState({
+                    win: true
+                })
+                this.setState({
                     cell: Array(9).fill(null)
                 })
             }
@@ -50,7 +54,16 @@ class App extends React.Component {
         this.isWinner()
     }
 
+    iziWinn = () => {
+        if(this.state.win) {
+            return <p>Изи победа</p>
+        }else {
+            return null
+        }
+    }
+
     render() {
+
         return (
             <div className="App">
                 <h1 className="titleGame">Игра "Крестики-нулики"</h1>
@@ -59,6 +72,10 @@ class App extends React.Component {
                     cell={this.state.cell}
                     clickCellHandler={this.clickCellHandler}
                 />
+
+
+                <p>Ход игрока: {(this.state.count % 2 === 0) ? "x" : 0}</p>
+                {this.iziWinn}
 
             </div>
         );
