@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d14a7a7-bfd6-41b6-a653-c47dbeded646" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Cross-zero/IziWinn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +68,7 @@
       <updated>1584544273148</updated>
       <workItem from="1584544277257" duration="8197000" />
       <workItem from="1584563346413" duration="10275000" />
-      <workItem from="1584580755864" duration="2806000" />
+      <workItem from="1584580755864" duration="3068000" />
     </task>
     <servers />
   </component>

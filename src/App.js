@@ -53,6 +53,10 @@ class App extends React.Component {
     clickCellHandler = (index) => {
         let cell = this.state.cell
 
+        this.setState({
+            win: false
+        })
+
         if (cell[index] === null) {
             cell[index] = (this.state.count % 2 === 0) ? "x" : 0
             this.setState({
