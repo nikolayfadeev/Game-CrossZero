@@ -11,6 +11,12 @@ class App extends React.Component {
         win: false
     }
 
+    onClearBoard = () => {
+        this.setState({
+            cell: Array(9).fill(null)
+        })
+    }
+
     isWinner = () => {
         let winCombo = [
             [0,1,2],
@@ -34,9 +40,7 @@ class App extends React.Component {
                 this.setState({
                     win: true
                 })
-                this.setState({
-                    cell: Array(9).fill(null)
-                })
+                this.onClearBoard()
             }
         }
     }
@@ -62,6 +66,8 @@ class App extends React.Component {
         }
     }
 
+
+
     render() {
 
         return (
@@ -71,6 +77,7 @@ class App extends React.Component {
                 <CrossZero
                     cell={this.state.cell}
                     clickCellHandler={this.clickCellHandler}
+                    onClearBoard={this.onClearBoard}
                 />
 
 

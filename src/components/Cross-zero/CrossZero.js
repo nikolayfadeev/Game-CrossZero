@@ -9,6 +9,7 @@ export default function CrossZero(props) {
             <ul>
                 <ItemGame cell={props.cell} clickCellHandler={props.clickCellHandler.bind(this)}/>
             </ul>
+            <button onClick={props.onClearBoard}>Отчистить доску</button>
         </div>
     )
 
