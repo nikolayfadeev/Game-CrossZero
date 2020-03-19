@@ -9,7 +9,8 @@ class App extends React.Component {
     state = {
         cell: Array(9).fill(null),
         count: 0,
-        win: false
+        win: false,
+        draw: false
     }
 
     onClearBoard = () => {
@@ -19,6 +20,13 @@ class App extends React.Component {
         this.setState({
             win: false
         })
+    }
+
+    isDraw = () => {
+        const draw = this.state.draw
+        if(draw === true) {
+            alert("Ничья")
+        }
     }
 
     isWinner = () => {
@@ -34,6 +42,8 @@ class App extends React.Component {
         ]
         let symbl = (this.state.count % 2 === 0) ? "x" : 0
 
+        let cell = this.state.cell
+
         for (let i=0; i<winCombo.length; i++) {
             let onCombo = winCombo[i]
             if(this.state.cell[onCombo[0]] === symbl
@@ -46,8 +56,27 @@ class App extends React.Component {
                 alert(`${symbl} - Вы выиграли`)
 
                 this.onClearBoard()
+            }else {
+                const draw = cell.every((item) => {
+                    return item !==null
+                })
+
+                if(draw === true) {
+                    alert("Ничья")
+                }
+
+                // this.setState({
+                //     draw: draw
+                // })
+                //
+
             }
         }
+
+
+
+
+
     }
 
     clickCellHandler = (index) => {
