@@ -22,12 +22,7 @@ class App extends React.Component {
         })
     }
 
-    isDraw = () => {
-        const draw = this.state.draw
-        if(draw === true) {
-            alert("Ничья")
-        }
-    }
+
 
     isWinner = () => {
         let winCombo = [
@@ -56,25 +51,8 @@ class App extends React.Component {
                 alert(`${symbl} - Вы выиграли`)
 
                 this.onClearBoard()
-            }else {
-                const draw = cell.every((item) => {
-                    return item !==null
-                })
-
-                if(draw === true) {
-                    alert("Ничья")
-                }
-
-                // this.setState({
-                //     draw: draw
-                // })
-                //
-
             }
         }
-
-
-
 
 
     }
@@ -93,7 +71,15 @@ class App extends React.Component {
                 cell: cell
             })
         }
+        const draw = cell.every((item) => {
+            return item !==null
+        })
+
+        if(draw === true) {
+            alert("Ничья")
+        }
         this.isWinner()
+
     }
 
 
